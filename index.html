@@ -3,9 +3,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script>
+          var i = 1;
+          setInterval(function() {
+            document.getElementById('loading' + i).style.display='block';
+            i += 1;
+          }, 5000);
+         </script>
+         <style>
+            .hideme { display: none }
+            #messages { padding: 10px; font-family: mono; }
+         </style>
     </head>
     <body>
-        <div id="app">Loading...</div>
+        <div id="app">
+          <div id="messages">
+            <div id="loading1" class="hideme">Loading...</div>
+            <div id="loading2" class="hideme">Still loading...</div>
+            <div id="loading3" class="hideme">Still loading...</div>          
+            <div id="loading4" class="hideme">Hmm, something may be wrong :-(</div>
+            <div id="loading5" class="hideme">Oh ^&@$!!!</div>
+            <div id="loading6" class="hideme">You're not using Internet Explorer are you?</div>
+            <div id="loading7" class="hideme">Or have a slow mobile connection?</div>
+            <div id="loading8" class="hideme">Jez Marianne!</div>
+            <div id="loading9" class="hideme">Sorry we could only do so much in 46 hours.</div>
+            <div id="loading10" class="hideme">Probably best you try with Google Chrome and/or an Android phone.</div>
+          </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_AJ7sGR4S5aXnjmQ1eXPLsghMUGlGjak"></script>
